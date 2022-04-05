@@ -11,8 +11,7 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="hdata:image/jpeg;base64,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">
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <img 
-	<!--  -->
+    <img >
 	<!-- <title>Tactii Research intern training program</title>
 	<meta name="description" content="Exploree." />
 	<link rel="canonical" href="https://tactii.com/" />
@@ -153,7 +152,7 @@ var gf_legacy_multi = {"2":""};
 
   <!-- </li> -->
 
-<!--   
+
                 <li class="c-site-header-nav__item    ">
   <a
     class="c-site-header-nav__item-link c-site-header-nav__item-link--depth-4  is-link"
@@ -178,7 +177,7 @@ var gf_legacy_multi = {"2":""};
     </div>
   </a>
 
-  </li> -->
+  </li>
 
   
                 <li class="c-site-header-nav__item    ">
@@ -310,10 +309,10 @@ var gf_legacy_multi = {"2":""};
     </div>
   </a> -->
 
-  </li>
+  <!-- </li>
 
   
-                <li class="c-site-header-nav__item    ">
+                <li class="c-site-header-nav__item    "> -->
   <!-- <a
     class="c-site-header-nav__item-link c-site-header-nav__item-link--depth-3  is-link"
           href="https://oneflow.com/alternatives/"
@@ -2449,23 +2448,17 @@ Gävlegatan 12a<br />
         
         <div class="c-nav-social ">
   <nav class="c-nav-social__menu">
-                <a href="https://www.youtube.com/channel/UCelPSYwtNS8ORNIAfYQ9Z_g/featured" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/channel/UCY5XLRFG8JuCCRmS9sco-IA" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23.5 6.19005C23.3648 5.67901 23.0979 5.2124 22.7259 4.83686C22.3538 4.46132 21.8897 4.19001 21.38 4.05005C19.5 3.55005 12 3.55005 12 3.55005C12 3.55005 4.5 3.55005 2.62 4.05005C2.11025 4.19001 1.64617 4.46132 1.27414 4.83686C0.902108 5.2124 0.635168 5.67901 0.5 6.19005C0 8.07005 0 12 0 12C0 12 0 15.93 0.5 17.81C0.635168 18.3211 0.902108 18.7877 1.27414 19.1632C1.64617 19.5388 2.11025 19.8101 2.62 19.9501C4.49 20.4501 12 20.4501 12 20.4501C12 20.4501 19.5 20.4501 21.38 19.9501C21.8897 19.8101 22.3538 19.5388 22.7259 19.1632C23.0979 18.7877 23.3648 18.3211 23.5 17.81C24 15.93 24 12 24 12C24 12 24 8.07005 23.5 6.19005ZM9.54 15.57V8.43005L15.82 12L9.54 15.57Z" fill="#013A4C"/>
 </svg>      </a>
-                <a href="https://twitter.com/oneflowcom" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.76C20.34 7.06 19.63 7.26 18.88 7.36C19.6552 6.88246 20.2309 6.13984 20.5 5.27C19.79 5.7 19 6.02 18.16 6.19C17.8176 5.81465 17.4005 5.51493 16.9356 5.31001C16.4707 5.1051 15.9681 4.99951 15.46 5C14.8974 5.00373 14.3429 5.13467 13.8381 5.38304C13.3333 5.63141 12.8912 5.99076 12.5449 6.43419C12.1986 6.87762 11.9571 7.39364 11.8385 7.94361C11.7199 8.49359 11.7273 9.06327 11.86 9.61C10.388 9.53136 8.94944 9.14128 7.63935 8.46555C6.32925 7.78982 5.17744 6.8438 4.26 5.69C3.78372 6.51507 3.63654 7.48955 3.84791 8.41847C4.05929 9.34739 4.61362 10.1622 5.4 10.7C4.81018 10.6818 4.23362 10.5205 3.72 10.23V10.28C3.71724 11.1412 4.01096 11.977 4.55181 12.6472C5.09265 13.3173 5.84767 13.7809 6.69 13.96C6.1453 14.1078 5.5739 14.1283 5.02 14.02C5.24851 14.762 5.70464 15.4133 6.32381 15.8817C6.94299 16.3502 7.69382 16.6119 8.47 16.63C7.70895 17.2431 6.83297 17.6979 5.89358 17.9675C4.9542 18.2371 3.97038 18.3162 3 18.2C4.68121 19.3038 6.6488 19.8913 8.66 19.89C15.46 19.89 19.16 14.16 19.16 9.19V8.7C19.8853 8.16959 20.5087 7.51234 21 6.76V6.76Z" fill="#013A4C"/>
-</svg>      </a>
-                <a href="https://www.linkedin.com/company/oneflowcom/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
+                
+                <a href="https://www.linkedin.com/company/tactii/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M21 13.34V19.86H17.14V13.77C17.14 12.25 16.58 11.2 15.19 11.2C14.8957 11.1973 14.6041 11.2564 14.3342 11.3736C14.0642 11.4908 13.8219 11.6634 13.623 11.8803C13.424 12.0971 13.2729 12.3534 13.1793 12.6324C13.0858 12.9115 13.052 13.207 13.08 13.5V19.86H9.22C9.22 19.86 9.27 9.56 9.22 8.48H13.08V10.1L13.05 10.13H13.08V10.1C13.4349 9.50039 13.9463 9.00866 14.5593 8.67747C15.1724 8.34629 15.864 8.18816 16.56 8.22C19.1 8.22 21 9.84 21 13.34ZM5.18 3C3.86 3 3 3.85 3 4.97C3 6.06 3.84 6.93 5.13 6.93H5.16C6.5 6.93 7.34 6.06 7.34 4.97C7.32 3.85 6.5 3 5.18 3ZM3.23 19.86H7.09V8.48H3.23V19.86Z" fill="#013A4C"/>
 </svg>      </a>
-                <a href="https://www.facebook.com/oneflowcom/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6099 20.85H3.99993C3.44993 20.85 3.00993 20.41 3.00993 19.87V3.99C2.99993 3.44 3.43993 3 3.99993 3H19.9999C20.5599 3 20.9999 3.44 20.9999 3.99V19.87C20.9999 20.41 20.5599 20.85 19.9999 20.85H15.4199V13.94H17.7599L18.1099 11.24H15.4199V9.52C15.4199 8.74 15.6399 8.22 16.7699 8.22H18.1999V5.8C17.9599 5.77 17.0999 5.7 16.0999 5.7C14.0299 5.7 12.6099 6.95 12.6099 9.26V11.24H10.2699V13.94H12.6099V20.85V20.85Z" fill="#013A4C"/>
-</svg>      </a>
-                <a href="https://www.instagram.com/oneflowcom/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
+                
+                <a href="https://www.instagram.com/featurepreneur/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 3.00001C8.92 3.00001 8.6 3.01001 7.58 3.06001C6.58 3.10001 5.88 3.26001 5.28 3.49001C4.65 3.74001 4.12 4.06001 3.59 4.59001C3.10677 5.05659 2.73135 5.62314 2.49 6.25001C2.26 6.85001 2.1 7.53001 2.06 8.54001C2 9.54001 2 9.86001 2 12.42C2 14.98 2.01 15.3 2.06 16.31C2.1 17.31 2.26 18 2.5 18.59C2.74 19.21 3.07 19.74 3.6 20.26C4.12 20.79 4.65 21.11 5.28 21.36C5.88 21.58 6.58 21.74 7.58 21.79C8.6 21.83 8.92 21.85 11.5 21.85C14.08 21.85 14.4 21.83 15.42 21.79C16.42 21.74 17.12 21.59 17.72 21.35C18.356 21.114 18.9327 20.742 19.41 20.26C19.93 19.74 20.26 19.21 20.51 18.59C20.74 17.99 20.9 17.31 20.94 16.31C20.99 15.31 21 14.98 21 12.42C21 9.86001 20.99 9.54001 20.94 8.54001C20.9 7.54001 20.74 6.85001 20.5 6.25001C20.2596 5.61971 19.8842 5.04969 19.4 4.58001C18.9256 4.09922 18.3524 3.7273 17.72 3.49001C17.12 3.26001 16.42 3.10001 15.42 3.06001C14.1142 3.00231 12.807 2.98231 11.5 3.00001V3.00001ZM11.5 4.70001C14.04 4.70001 14.34 4.70001 15.34 4.75001C16.27 4.79001 16.77 4.95001 17.1 5.08001C17.55 5.25001 17.86 5.45001 18.2 5.78001C18.53 6.11001 18.73 6.43001 18.9 6.87001C19.04 7.20001 19.2 7.70001 19.23 8.62001C19.28 9.61001 19.29 9.91001 19.29 12.42C19.29 14.94 19.28 15.24 19.23 16.23C19.19 17.15 19.03 17.65 18.91 17.98C18.73 18.42 18.53 18.73 18.2 19.06C17.86 19.39 17.55 19.6 17.1 19.76C16.5363 19.969 15.9411 20.0806 15.34 20.09C14.34 20.14 14.04 20.15 11.5 20.15C8.96 20.15 8.66 20.14 7.66 20.09C7.05944 20.0838 6.4643 19.9756 5.9 19.77C5.48571 19.6216 5.10987 19.3825 4.8 19.07C4.488 18.7637 4.24878 18.3912 4.1 17.98C3.8898 17.4201 3.77815 16.828 3.77 16.23C3.72 15.23 3.71 14.93 3.71 12.43C3.71 9.91001 3.72 9.61001 3.77 8.62001C3.81 7.70001 3.97 7.20001 4.09 6.87001C4.27 6.43001 4.47 6.11001 4.81 5.78001C5.14 5.45001 5.45 5.25001 5.9 5.08001C6.4637 4.87098 7.05886 4.75939 7.66 4.75001C8.66 4.71001 8.96 4.70001 11.5 4.70001V4.70001ZM6.62 12.42C6.62262 11.7818 6.75093 11.1503 6.99759 10.5617C7.24425 9.97304 7.60444 9.43875 8.05759 8.98931C8.51074 8.53988 9.04798 8.1841 9.63863 7.94229C10.2293 7.70048 10.8618 7.57737 11.5 7.58001C14.2 7.58001 16.38 9.75001 16.38 12.42C16.3774 13.0582 16.2491 13.6897 16.0024 14.2783C15.7557 14.867 15.3956 15.4013 14.9424 15.8507C14.4893 16.3001 13.952 16.6559 13.3614 16.8977C12.7707 17.1395 12.1382 17.2626 11.5 17.26C10.8618 17.2626 10.2293 17.1395 9.63863 16.8977C9.04798 16.6559 8.51074 16.3001 8.05759 15.8507C7.60444 15.4013 7.24425 14.867 6.99759 14.2783C6.75093 13.6897 6.62262 13.0582 6.62 12.42V12.42ZM11.5 15.56C11.0855 15.5626 10.6745 15.4834 10.2907 15.3269C9.90688 15.1704 9.55771 14.9397 9.26321 14.648C8.96872 14.3563 8.73469 14.0094 8.57455 13.627C8.41441 13.2447 8.33131 12.8345 8.33 12.42C8.33131 12.0055 8.41441 11.5953 8.57455 11.213C8.73469 10.8307 8.96872 10.4837 9.26321 10.192C9.55771 9.90028 9.90688 9.66957 10.2907 9.51307C10.6745 9.35657 11.0855 9.27737 11.5 9.28001C13.25 9.28001 14.67 10.68 14.67 12.42C14.6687 12.8345 14.5856 13.2447 14.4254 13.627C14.2653 14.0094 14.0313 14.3563 13.7368 14.648C13.4423 14.9397 13.0931 15.1704 12.7093 15.3269C12.3255 15.4834 11.9145 15.5626 11.5 15.56V15.56ZM16.57 8.52001C17.2 8.52001 17.71 8.02001 17.71 7.39001C17.71 6.77001 17.21 6.26001 16.57 6.26001C15.94 6.26001 15.43 6.76001 15.43 7.39001C15.43 8.02001 15.94 8.52001 16.57 8.52001Z" fill="#013A4C"/>
 </svg>      </a>
@@ -2662,23 +2655,17 @@ Gävlegatan 12a<br />
     
     <div class="c-nav-social c-nav-social--mobile">
   <nav class="c-nav-social__menu">
-                <a href="https://www.youtube.com/channel/UCelPSYwtNS8ORNIAfYQ9Z_g/featured" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/channel/UCY5XLRFG8JuCCRmS9sco-IA" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23.5 6.19005C23.3648 5.67901 23.0979 5.2124 22.7259 4.83686C22.3538 4.46132 21.8897 4.19001 21.38 4.05005C19.5 3.55005 12 3.55005 12 3.55005C12 3.55005 4.5 3.55005 2.62 4.05005C2.11025 4.19001 1.64617 4.46132 1.27414 4.83686C0.902108 5.2124 0.635168 5.67901 0.5 6.19005C0 8.07005 0 12 0 12C0 12 0 15.93 0.5 17.81C0.635168 18.3211 0.902108 18.7877 1.27414 19.1632C1.64617 19.5388 2.11025 19.8101 2.62 19.9501C4.49 20.4501 12 20.4501 12 20.4501C12 20.4501 19.5 20.4501 21.38 19.9501C21.8897 19.8101 22.3538 19.5388 22.7259 19.1632C23.0979 18.7877 23.3648 18.3211 23.5 17.81C24 15.93 24 12 24 12C24 12 24 8.07005 23.5 6.19005ZM9.54 15.57V8.43005L15.82 12L9.54 15.57Z" fill="#013A4C"/>
 </svg>      </a>
-                <a href="https://twitter.com/oneflowcom" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.76C20.34 7.06 19.63 7.26 18.88 7.36C19.6552 6.88246 20.2309 6.13984 20.5 5.27C19.79 5.7 19 6.02 18.16 6.19C17.8176 5.81465 17.4005 5.51493 16.9356 5.31001C16.4707 5.1051 15.9681 4.99951 15.46 5C14.8974 5.00373 14.3429 5.13467 13.8381 5.38304C13.3333 5.63141 12.8912 5.99076 12.5449 6.43419C12.1986 6.87762 11.9571 7.39364 11.8385 7.94361C11.7199 8.49359 11.7273 9.06327 11.86 9.61C10.388 9.53136 8.94944 9.14128 7.63935 8.46555C6.32925 7.78982 5.17744 6.8438 4.26 5.69C3.78372 6.51507 3.63654 7.48955 3.84791 8.41847C4.05929 9.34739 4.61362 10.1622 5.4 10.7C4.81018 10.6818 4.23362 10.5205 3.72 10.23V10.28C3.71724 11.1412 4.01096 11.977 4.55181 12.6472C5.09265 13.3173 5.84767 13.7809 6.69 13.96C6.1453 14.1078 5.5739 14.1283 5.02 14.02C5.24851 14.762 5.70464 15.4133 6.32381 15.8817C6.94299 16.3502 7.69382 16.6119 8.47 16.63C7.70895 17.2431 6.83297 17.6979 5.89358 17.9675C4.9542 18.2371 3.97038 18.3162 3 18.2C4.68121 19.3038 6.6488 19.8913 8.66 19.89C15.46 19.89 19.16 14.16 19.16 9.19V8.7C19.8853 8.16959 20.5087 7.51234 21 6.76V6.76Z" fill="#013A4C"/>
-</svg>      </a>
-                <a href="https://www.linkedin.com/company/oneflowcom/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
+                
+                <a href="https://www.linkedin.com/company/tactii/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M21 13.34V19.86H17.14V13.77C17.14 12.25 16.58 11.2 15.19 11.2C14.8957 11.1973 14.6041 11.2564 14.3342 11.3736C14.0642 11.4908 13.8219 11.6634 13.623 11.8803C13.424 12.0971 13.2729 12.3534 13.1793 12.6324C13.0858 12.9115 13.052 13.207 13.08 13.5V19.86H9.22C9.22 19.86 9.27 9.56 9.22 8.48H13.08V10.1L13.05 10.13H13.08V10.1C13.4349 9.50039 13.9463 9.00866 14.5593 8.67747C15.1724 8.34629 15.864 8.18816 16.56 8.22C19.1 8.22 21 9.84 21 13.34ZM5.18 3C3.86 3 3 3.85 3 4.97C3 6.06 3.84 6.93 5.13 6.93H5.16C6.5 6.93 7.34 6.06 7.34 4.97C7.32 3.85 6.5 3 5.18 3ZM3.23 19.86H7.09V8.48H3.23V19.86Z" fill="#013A4C"/>
 </svg>      </a>
-                <a href="https://www.facebook.com/oneflowcom/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6099 20.85H3.99993C3.44993 20.85 3.00993 20.41 3.00993 19.87V3.99C2.99993 3.44 3.43993 3 3.99993 3H19.9999C20.5599 3 20.9999 3.44 20.9999 3.99V19.87C20.9999 20.41 20.5599 20.85 19.9999 20.85H15.4199V13.94H17.7599L18.1099 11.24H15.4199V9.52C15.4199 8.74 15.6399 8.22 16.7699 8.22H18.1999V5.8C17.9599 5.77 17.0999 5.7 16.0999 5.7C14.0299 5.7 12.6099 6.95 12.6099 9.26V11.24H10.2699V13.94H12.6099V20.85V20.85Z" fill="#013A4C"/>
-</svg>      </a>
-                <a href="https://www.instagram.com/oneflowcom/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
+                
+                <a href="https://www.instagram.com/featurepreneur/" class="c-nav-social__item" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 3.00001C8.92 3.00001 8.6 3.01001 7.58 3.06001C6.58 3.10001 5.88 3.26001 5.28 3.49001C4.65 3.74001 4.12 4.06001 3.59 4.59001C3.10677 5.05659 2.73135 5.62314 2.49 6.25001C2.26 6.85001 2.1 7.53001 2.06 8.54001C2 9.54001 2 9.86001 2 12.42C2 14.98 2.01 15.3 2.06 16.31C2.1 17.31 2.26 18 2.5 18.59C2.74 19.21 3.07 19.74 3.6 20.26C4.12 20.79 4.65 21.11 5.28 21.36C5.88 21.58 6.58 21.74 7.58 21.79C8.6 21.83 8.92 21.85 11.5 21.85C14.08 21.85 14.4 21.83 15.42 21.79C16.42 21.74 17.12 21.59 17.72 21.35C18.356 21.114 18.9327 20.742 19.41 20.26C19.93 19.74 20.26 19.21 20.51 18.59C20.74 17.99 20.9 17.31 20.94 16.31C20.99 15.31 21 14.98 21 12.42C21 9.86001 20.99 9.54001 20.94 8.54001C20.9 7.54001 20.74 6.85001 20.5 6.25001C20.2596 5.61971 19.8842 5.04969 19.4 4.58001C18.9256 4.09922 18.3524 3.7273 17.72 3.49001C17.12 3.26001 16.42 3.10001 15.42 3.06001C14.1142 3.00231 12.807 2.98231 11.5 3.00001V3.00001ZM11.5 4.70001C14.04 4.70001 14.34 4.70001 15.34 4.75001C16.27 4.79001 16.77 4.95001 17.1 5.08001C17.55 5.25001 17.86 5.45001 18.2 5.78001C18.53 6.11001 18.73 6.43001 18.9 6.87001C19.04 7.20001 19.2 7.70001 19.23 8.62001C19.28 9.61001 19.29 9.91001 19.29 12.42C19.29 14.94 19.28 15.24 19.23 16.23C19.19 17.15 19.03 17.65 18.91 17.98C18.73 18.42 18.53 18.73 18.2 19.06C17.86 19.39 17.55 19.6 17.1 19.76C16.5363 19.969 15.9411 20.0806 15.34 20.09C14.34 20.14 14.04 20.15 11.5 20.15C8.96 20.15 8.66 20.14 7.66 20.09C7.05944 20.0838 6.4643 19.9756 5.9 19.77C5.48571 19.6216 5.10987 19.3825 4.8 19.07C4.488 18.7637 4.24878 18.3912 4.1 17.98C3.8898 17.4201 3.77815 16.828 3.77 16.23C3.72 15.23 3.71 14.93 3.71 12.43C3.71 9.91001 3.72 9.61001 3.77 8.62001C3.81 7.70001 3.97 7.20001 4.09 6.87001C4.27 6.43001 4.47 6.11001 4.81 5.78001C5.14 5.45001 5.45 5.25001 5.9 5.08001C6.4637 4.87098 7.05886 4.75939 7.66 4.75001C8.66 4.71001 8.96 4.70001 11.5 4.70001V4.70001ZM6.62 12.42C6.62262 11.7818 6.75093 11.1503 6.99759 10.5617C7.24425 9.97304 7.60444 9.43875 8.05759 8.98931C8.51074 8.53988 9.04798 8.1841 9.63863 7.94229C10.2293 7.70048 10.8618 7.57737 11.5 7.58001C14.2 7.58001 16.38 9.75001 16.38 12.42C16.3774 13.0582 16.2491 13.6897 16.0024 14.2783C15.7557 14.867 15.3956 15.4013 14.9424 15.8507C14.4893 16.3001 13.952 16.6559 13.3614 16.8977C12.7707 17.1395 12.1382 17.2626 11.5 17.26C10.8618 17.2626 10.2293 17.1395 9.63863 16.8977C9.04798 16.6559 8.51074 16.3001 8.05759 15.8507C7.60444 15.4013 7.24425 14.867 6.99759 14.2783C6.75093 13.6897 6.62262 13.0582 6.62 12.42V12.42ZM11.5 15.56C11.0855 15.5626 10.6745 15.4834 10.2907 15.3269C9.90688 15.1704 9.55771 14.9397 9.26321 14.648C8.96872 14.3563 8.73469 14.0094 8.57455 13.627C8.41441 13.2447 8.33131 12.8345 8.33 12.42C8.33131 12.0055 8.41441 11.5953 8.57455 11.213C8.73469 10.8307 8.96872 10.4837 9.26321 10.192C9.55771 9.90028 9.90688 9.66957 10.2907 9.51307C10.6745 9.35657 11.0855 9.27737 11.5 9.28001C13.25 9.28001 14.67 10.68 14.67 12.42C14.6687 12.8345 14.5856 13.2447 14.4254 13.627C14.2653 14.0094 14.0313 14.3563 13.7368 14.648C13.4423 14.9397 13.0931 15.1704 12.7093 15.3269C12.3255 15.4834 11.9145 15.5626 11.5 15.56V15.56ZM16.57 8.52001C17.2 8.52001 17.71 8.02001 17.71 7.39001C17.71 6.77001 17.21 6.26001 16.57 6.26001C15.94 6.26001 15.43 6.76001 15.43 7.39001C15.43 8.02001 15.94 8.52001 16.57 8.52001Z" fill="#013A4C"/>
 </svg>      </a>
@@ -2710,25 +2697,25 @@ Gävlegatan 12a<br />
           Login
         </a>
       </li>
-          <li class="c-site-footer-menu__item ">
+          <!-- <li class="c-site-footer-menu__item ">
         <a class="c-site-footer-menu__item-link " href="https://oneflow.com/privacy-notice/" target="" rel="">
           Privacy
         </a>
-      </li>
-          <li class="c-site-footer-menu__item ">
+      </li> -->
+          <!-- <li class="c-site-footer-menu__item ">
         <a class="c-site-footer-menu__item-link " href="https://oneflow.com/cookie-statement/" target="" rel="">
           Cookie statement
         </a>
-      </li>
+      </li> -->
       </ul>
-    <nav class="c-language-selector c-language-selector--light c-language-selector--footer">
+    <!-- <nav class="c-language-selector c-language-selector--light c-language-selector--footer">
 
     <div class="c-language-selector__selected" title="Select Language">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
   <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 17.93a8 8 0 01-6.79-9.72L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3a1 1 0 00-1-1H8v-2h2a1 1 0 001-1V7h2a2 2 0 002-2v-.41a8 8 0 012.9 12.8z"/>
-</svg>    </div>
+</svg>    </div> -->
 
-    <div class="c-language-selector__inner">
+    <!-- <div class="c-language-selector__inner">
       <ul class="c-language-selector__items ">
                     <li class="c-language-selector__item ">
               <a class="c-language-selector__item-link" href="https://oneflow.com/no/kundecaser/">
@@ -2800,11 +2787,11 @@ Gävlegatan 12a<br />
   </div>
 
 </footer>
-</div>
+</div> -->
 
         
   <!--copyscapeskip-->
-  <aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-light-scheme gdpr_infobar_postion_bottom gdpr-full-screen-infobar" role="note" aria-label="GDPR Cookie Banner" style="display: none;">
+  <!-- <aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-light-scheme gdpr_infobar_postion_bottom gdpr-full-screen-infobar" role="note" aria-label="GDPR Cookie Banner" style="display: none;">
     <div class="moove-gdpr-info-bar-container">
       <div class="moove-gdpr-info-bar-content">
         
@@ -2812,16 +2799,15 @@ Gävlegatan 12a<br />
   <h1 id="onetrust-policy-title">We Care About Your Privacy</h1>
 <p>We use necessary cookies to make our site work and to save your preferences for cookie settings. We would also like to set analytics cookies to help us analyze our website usage and traffic, personalize content and ads to improve your experience visiting Oneflow. Find out more about the cookies we use in our <a class="sc-1ko78hw-0 fiVZLH" title="https://oneflow.com/cookie-statement/" href="https://oneflow.com/cookie-statement/" data-renderer-mark="true">cookie statement</a> or accept only a selection of cookies in <span role="link" tabindex="0" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</span>. To change your preferences at any time, click on the “Change cookie settings” icon in the lower left corner.</p>
 </div>
-<!--  .moove-gdpr-cookie-notice -->        
-<div class="moove-gdpr-button-holder">
+  .moove-gdpr-cookie-notice -->        
+<!-- <div class="moove-gdpr-button-holder">
 		  <button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept Cookies">Accept Cookies</button>
 	  				<button class="mgbutton moove-gdpr-infobar-settings-btn change-settings-button gdpr-fbo-2" data-href="#moove_gdpr_cookie_modal" aria-label="Manage Cookies">Manage Cookies</button>
-			</div>
-<!--  .button-container -->      </div>
-      <!-- moove-gdpr-info-bar-content -->
+			</div>    </div> 
+       moove-gdpr-info-bar-content 
     </div>
-    <!-- moove-gdpr-info-bar-container -->
-  </aside>
+    moove-gdpr-info-bar-container 
+  </aside> -->
   <!-- #moove_gdpr_cookie_info_bar -->
   <!--/copyscapeskip-->
 <style>.wp-container-624ae1f5c5395 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;align-items: center;}.wp-container-624ae1f5c5395 > * { margin: 0; }</style>
@@ -2937,13 +2923,13 @@ var gdpr_consent__cookies = "strict"
 
           <div class="moove-gdpr-tab-content">
             
-<div id="privacy_overview" class="moove-gdpr-tab-main">
+<!-- <div id="privacy_overview" class="moove-gdpr-tab-main">
     <div class="moove-gdpr-tab-main-content">
   	<p>This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognizing you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</p>
-  	  </div>
+  	  </div> -->
   <!--  .moove-gdpr-tab-main-content -->
 
-</div>
+<!-- </div> -->
 <!-- #privacy_overview -->            
   <div id="strict-necessary-cookies" class="moove-gdpr-tab-main" >
     <span class="tab-title">Strictly necessary cookies</span>
